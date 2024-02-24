@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={<Login/>}/>
         <Route path="/admin" element={<Admin />} />
         <Route path="/student" element={<Student />} />
-        <Route path="/driver" element={<Driver />} />
         <Route path="/student2" element={<Student2/>} ></Route>
         <Route path="/student3" element={<Student3/>} ></Route>
         <Route path="/driver-login" element={<Driver_login />} />
