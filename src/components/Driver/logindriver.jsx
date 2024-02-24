@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom"
 
 const logindriver = () => {
+    const navigate = useNavigate('/driver')
+
+    const handleClick = () =>{
+        navigate('/driver-decision')
+    }
+
     return <div className="main">
         <div className="login">
             <label htmlFor="logid"> LOG ID : </label>
@@ -11,7 +18,7 @@ const logindriver = () => {
             <input id='password' type='password'></input>
         </div>
             <br></br>
-        <button className="submit btn">submit</button>
+        <button className="submit btn" onClick={handleClick}>submit</button>
         
     </div>
 

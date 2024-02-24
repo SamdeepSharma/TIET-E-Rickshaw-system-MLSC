@@ -11,7 +11,7 @@ const Login = () => {
   }
 
   const handleDriver = () =>{
-    navigate('/driver')
+    navigate('/driver-login')
   }
 
   const handleAdmin = () =>{

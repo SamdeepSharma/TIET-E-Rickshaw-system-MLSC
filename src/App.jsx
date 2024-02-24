@@ -2,8 +2,9 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Student from "./components/Student/student"
 import Admin from "./components/Admin/admin"
-import Driver from "./components/Driver/driver"
 import Login from './components/Login/Login'
+import Driver_login from './components/Driver/logindriver'
+import Decision from './components/Driver/decision'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
         <Route path="/" element={<Login/>}/>
         <Route path="/admin" element={<Admin />} />
         <Route path="/student" element={<Student />} />
-        <Route path="/driver" element={<Driver />} />
+        <Route path="/driver-login" element={<Driver_login />} />
+        <Route path="/driver-decision" element={<Decision />} />
       </Routes>
     </>
   )
