@@ -7,13 +7,18 @@ import Student2 from './components/Student/Student2'
 import Student3 from './components/Student/Student3'
 import Driver_login from './components/Driver/logindriver'
 import Decision from './components/Driver/decision'
+import "./App.css"
 import Restmode from './components/Driver/restmode'
 
 function App() {
 
   return (
     <>
-      <Routes>
+    <div className="myback">
+      <div>
+        <img src="thapar.jpg" alt="black" className="absolute -z-10 opacity-[.5] h-[700px] w-[1550px]" />
+      </div>
+    <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/admin" element={<Admin />} />
         <Route path="/student" element={<Student />} />
@@ -23,6 +28,8 @@ function App() {
         <Route path="/driver-decision" element={<Decision />} />
         <Route path="/driver-decision/rest" element={<Restmode/>}/>
       </Routes>
+    </div>
+   
     </>
   )
 }
