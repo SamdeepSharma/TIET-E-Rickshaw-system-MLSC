@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router'
 const restmode =()=>{
     const navigate = useNavigate();
     const handleclick=()=>{
-        navigate('/')
+        navigate("/Map")
     }
     return <div>
         <h1 className='restmode'>Rest mode on !!</h1>
