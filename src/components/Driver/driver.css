@@ -1,0 +1,44 @@
+*{
+    background-color: #1e1e1e;
+    color: white;
+}
+.heading{ 
+    display: flex;
+    height:20vh;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-height: 50vh;
+}
+#logid{
+    align-items: center;
+}
+.btn{
+    border: 2px solid rgb(130, 130, 130);
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+}
+.submit{
+    font-size: 20px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.deci{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ready{
+    margin:25px 0px;
+}
+.waitbtn{
+
+}
