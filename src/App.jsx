@@ -9,7 +9,7 @@ import Driver_login from './components/Driver/logindriver'
 import Decision from './components/Driver/decision'
 import "./App.css"
 import Restmode from './components/Driver/restmode'
-
+import Map from './components/Driver/Map'
 function App() {
 
   return (
@@ -27,6 +27,7 @@ function App() {
         <Route path="/driver-login" element={<Driver_login />} />
         <Route path="/driver-decision" element={<Decision />} />
         <Route path="/driver-decision/rest" element={<Restmode/>}/>
+        <Route path="/Map" element={<Map/>}/>
       </Routes>
     </div>
    
