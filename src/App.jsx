@@ -5,6 +5,7 @@ import Admin from "./components/Admin/admin"
 import Login from './components/Login/Login'
 import Driver_login from './components/Driver/logindriver'
 import Decision from './components/Driver/decision'
+import Restmode from './components/Driver/restmode'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/student" element={<Student />} />
         <Route path="/driver-login" element={<Driver_login />} />
         <Route path="/driver-decision" element={<Decision />} />
+        <Route path="/driver-decision/rest" element={<Restmode/>}/>
       </Routes>
     </>
   )
