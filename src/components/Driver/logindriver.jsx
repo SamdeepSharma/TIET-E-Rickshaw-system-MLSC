@@ -1,11 +1,30 @@
 import { useNavigate } from "react-router-dom"
+import axios from 'axios'
 
 const logindriver = () => {
     const navigate = useNavigate('/driver')
 
-    const handleClick = () =>{
+    const handleClick = (res) =>{
+        try {
+            axios({
+              method: 'post',
+              url: 'http://localhost:3000/',
+              data: {
+                username: res.username,
+                password: res.password
+              }
+            });
+          }
+          catch (error) {
+            console.log(error)
+          }
+          finally{
+            console.log(res)
+          }
         navigate('/driver-decision')
     }
+
+    
 
     return <div className="main">
         <div className="login">
