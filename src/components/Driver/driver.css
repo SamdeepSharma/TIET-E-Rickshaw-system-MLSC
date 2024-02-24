@@ -1,6 +1,5 @@
 *{
-    background-color: #1e1e1e;
-    color: white;
+ 
 }
 .heading{ 
     display: flex;
@@ -23,6 +22,7 @@
     width: 130px;
     height: 40px;
 }
+
 .submit{
     font-size: 20px;
     border-radius: 30px;
