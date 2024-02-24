@@ -1,20 +1,34 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import "./Login.css"
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
+
+  const handleStudent = () =>{
+    navigate('/student')
+  }
+
+  const handleDriver = () =>{
+    navigate('/driver-login')
+  }
+
+  const handleAdmin = () =>{
+    navigate('/admin')
+  }
   return (
-    <div>
-      <div className="catchy flex mx-10">
-        <h1>Muskuraiye! aap thapar mein hain</h1>
-        <h1>Tumhari maa ki chu</h1>
+    <div className='flex flex-col justify-center items-center min-h-[100vh]'>
+      <div className="">
+        <h1 className='flex justify-center font-bold text-[30px]'>Muskuraiye! aap thapar mein hain</h1>
+        <h1 className='flex justify-center font-bold text-[30px]'>jk</h1>
       </div>
-      <div className="font-bold">
-        <h1 className="mx-11">Login as:</h1>
-        <div className="font-serif">
-          <button>Student</button>
-          <button>Driver</button>
-          <button>Admin</button>
+      <div className="font-bold my-[50px]">
+        <h1 className="font-semibold flex justify-center text-xl my-[20px]">Login as:</h1>
+        <div className="flex flex-col login-as">
+          <button className='my-2' onClick={handleStudent}>Student</button>
+          <button className='my-2' onClick={handleDriver}>Driver</button>
+          <button className='my-2' onClick={handleAdmin}>Admin</button>
         </div>
       </div>
      
