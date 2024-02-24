@@ -21,7 +21,7 @@ const Student2 = () => {
   return (
     <>
     <div>
-      <h1 className="text-white text-[50px] font-bold font-serif text-center mt-[100px]">Abhi Aap Kahan Hai</h1>
+      <h1 className="text-white text-[50px] font-bold font-serif text-center ">Abhi Aap Kahan Hain ?</h1>
     </div>
     <form className="text-black mt-[100px]"  onSubmit={handlesubmit} >
           <label className="text-white text-[30px] ml-[700px]  " >
@@ -46,7 +46,10 @@ const Student2 = () => {
             <option  value="HostelH">Hostel H</option>
             <option  value="HostelJ">Hostel J</option>
             <option  value="Hostelk">Hostel K</option>
-            <option  value="HostelL">Hostel L</option>
+            <option  value="Jaggi">Jaggi</option>
+            <option  value="D-block">D-Block</option>
+            <option  value="A">Hostel-A</option>
+            <option  value="O">Hostel O</option>
 
 
           </select>

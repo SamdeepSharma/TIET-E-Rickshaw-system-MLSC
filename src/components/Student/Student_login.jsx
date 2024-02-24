@@ -25,14 +25,14 @@ const Student_login = () => {
   return (
     <>
      <div>
-       <h1 className="font-bold text-[50px] text-center mt-[200px]">Login Yourself</h1>
+       <h1 className="font-bold text-[50px] text-center relative top-[100px] ">Login Yourself</h1>
     </div>
 <br /><br />
     <div>
-        <form className="flex flex-col text-center items-center" onSubmit={submitHandle}>
+        <form className="flex flex-col text-center items-center relative top-[100px]" onSubmit={submitHandle}>
             <label className="rounded-md" >
                 <input className="text-black"
-                type="text"
+                type="number"
                 name="rollNumber"
                 required
                 value={formdata.rollNumber}
