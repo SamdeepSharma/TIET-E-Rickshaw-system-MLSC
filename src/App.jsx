@@ -14,9 +14,9 @@ function App() {
 
   return (
     <>
-    <div className="myback">
+    <div >
       <div>
-        <img src="thapar.jpg" alt="black" className="absolute -z-10 opacity-[.5] h-[700px] w-[1550px]" />
+        <img src="thapar.jpg" alt="black" className="absolute -z-10  opacity-[.5] h-[700px] w-[1550px]" />
       </div>
     <Routes>
         <Route path="/" element={<Login/>}/>
