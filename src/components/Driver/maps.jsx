@@ -39,7 +39,7 @@ const MapComponent = () => {
     markers.forEach((marker) => {
       L.marker(marker.coordinates)
         .addTo(map)
-        .bindPopup(`${<img src= 'http://localhost:5173/node_modules/leaflet/dist/images/marker-icon-2x.png'></img>}
+        .bindPopup(`${<img src= 'marker.svg'></img>}
         <b>${marker.name}</b><br>You are at ${marker.name}.`)
         .openPopup();
     });

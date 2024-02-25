@@ -1,10 +1,13 @@
 
 import "../Student/Spinner.css"
 import Spinner from '../Student/Spinner';
-import Maps from './maps';
+import { useNavigate } from "react-router-dom";
+// import Maps from './maps';
+// import redirect from './html_redirect/redirect.html'
 
 import { useState , useEffect } from 'react';
 const Map = () => {
+    const navigate = useNavigate();
     const [showspinner , setshowspinner] = useState(true);
     useEffect(()=>{
      const timeoutID = setTimeout(()=>{
@@ -12,12 +15,12 @@ const Map = () => {
      } , 5000)
      return ()=> clearTimeout(timeoutID);
     } ,[]);
- 
+
   return (
     <div>
         <div className="text-center min-h-[100vh] flex justify-center items-center">
         {showspinner && <Spinner/>}
-        {!showspinner && <Maps/>}
+        {!showspinner && <button className="bg-slate-500 hover:scale-105 transition-all duration-200"><a href="https://html-inky-seven.vercel.app/">Open Map</a></button>}
          
 
         </div>
