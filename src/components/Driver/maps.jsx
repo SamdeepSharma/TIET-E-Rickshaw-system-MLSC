@@ -39,10 +39,12 @@ const MapComponent = () => {
     markers.forEach((marker) => {
       L.marker(marker.coordinates)
         .addTo(map)
-        .bindPopup(`<b>${marker.name}</b><br>You are at ${marker.name}.`)
+        .bindPopup(`${<img src= 'http://localhost:5173/node_modules/leaflet/dist/images/marker-icon-2x.png'></img>}
+        <b>${marker.name}</b><br>You are at ${marker.name}.`)
         .openPopup();
     });
 
+    
     // Cleanup function to remove the map when the component unmounts
     return () => {
       map.remove();

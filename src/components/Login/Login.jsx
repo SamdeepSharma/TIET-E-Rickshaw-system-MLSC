@@ -13,10 +13,7 @@ const Login = () => {
   const handleDriver = () =>{
     navigate('/driver-login')
   }
-
-  const handleAdmin = () =>{
-    navigate('/admin')
-  }
+  
   return (
     <div className='flex flex-col justify-center items-center min-h-[100vh]'>
       <div className="">
@@ -28,7 +25,7 @@ const Login = () => {
         <div className="flex flex-col login-as">
           <button className='my-2 hover:scale-105  hover:bg-gradient-to-bl from-red-200 via-red-300 to-yellow-200 transition-all duration-200' onClick={handleStudent}>Student</button>
           <button className='my-2 hover:scale-105  hover:bg-gradient-to-bl from-red-200 via-red-300 to-yellow-200 transition-all duration-200' onClick={handleDriver}>Driver</button>
-          <button className='my-2 hover:scale-105  hover:bg-gradient-to-bl from-red-200 via-red-300 to-yellow-200 transition-all duration-200' onClick={handleAdmin}>Admin</button>
+          {/* <button className='my-2 hover:scale-105  hover:bg-gradient-to-bl from-red-200 via-red-300 to-yellow-200 transition-all duration-200' onClick={handleAdmin}>Admin</button> */}
         </div>
       </div>
      

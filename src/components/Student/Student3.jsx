@@ -20,7 +20,7 @@ const Student3 = () => {
         showspinner && <Spinner/>
        }
        {
-        !showspinner && <h1 className="text-[50px] text-center">Your Ride is comming ! </h1>
+        !showspinner && <h1 className="text-[50px] text-center">Your Ride is coming ! </h1>
        }
            
         </div>
