@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "../Student/Spinner.css"
 import Spinner from '../Student/Spinner';
 import Maps from './maps';
@@ -15,7 +15,7 @@ const Map = () => {
  
   return (
     <div>
-        <div className="text-center relative top-[100px]">
+        <div className="text-center min-h-[100vh] flex justify-center items-center">
         {showspinner && <Spinner/>}
         {!showspinner && <Maps/>}
          

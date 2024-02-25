@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router'
 
 const Student_login = () => {
@@ -7,7 +7,7 @@ const Student_login = () => {
         rollNumber:"" , password:""
     })
     const delay = (d)=>{
-        return new Promise((resolve,reject)=>{
+        return new Promise((resolve)=>{
           setTimeout(() => {
             resolve()
           }, d*1000);

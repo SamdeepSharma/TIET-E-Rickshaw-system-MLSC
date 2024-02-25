@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router'
 
 const Student2 = () => {
    const [formdata ,setformdata] = useState({location:""})
+   const [btn, setbtn] = useState('Submit')
    const navigate = useNavigate();
-   const handlechange = (event)=>{
+   const delay = (d)=>{
+    return new Promise((resolve)=>{
+      setTimeout(() => {
+        resolve()
+      }, d*1000);
+    })
+  }
+   const handlechange =(event)=>{
+   
     setformdata(prevdata=>{
        const {name , value} = event.target
         return{
@@ -13,8 +22,11 @@ const Student2 = () => {
         }
     })
    }
-   const handlesubmit =(event) =>{
+   const handlesubmit =async(event) =>{
         event.preventDefault();
+        setbtn('Submitting')
+            await delay(1)
+            setbtn('Submit')
         console.log(formdata);
         navigate("/student3")
    }
@@ -54,7 +66,7 @@ const Student2 = () => {
 
           </select>
           <br /><br />
-          <button className=" ml-[750px] bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl h-[50px] w-[100px] px-2 hover:bg-blue-400 hover:scale-105 transition-all duration-200 rounded-md">submit</button>
+          <button className=" ml-[750px] bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl h-[50px] w-[100px] px-2 hover:bg-blue-400 hover:scale-105 transition-all duration-200 rounded-md">{btn}</button>
     </form>
     </>
     

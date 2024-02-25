@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Spinner from './Spinner'
 const Student3 = () => {
    const [showspinner , setshowspinner] = useState(true);
+   
    useEffect(()=>{
     const timeoutID = setTimeout(()=>{
         setshowspinner(false);
